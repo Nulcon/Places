@@ -8,23 +8,21 @@
 
 import UIKit
 
-class CreateNewPlaceViewController: UIViewController {
+class CreateNewPlaceViewController: UIViewController, PlacesPresenter {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func createNewPlace(_ sender: Any) {
+        guard let name = nameTextField.text,
+            let latitudeString = latitudeTextField.text,
+            let longitudeString = longitudeTextField.text,
+            let latitude = Double(latitudeString),
+            let longitude = Double(longitudeString) else { return }
+        
+        placeController?.createPlace(withName: name, latitude: latitude, longitude: longitude)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    var placeController: PlaceController?
+    
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var latitudeTextField: UITextField!
+    @IBOutlet var longitudeTextField: UITextField!
 }

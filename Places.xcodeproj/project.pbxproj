@@ -11,6 +11,8 @@
 		1358118F210A2E5400FE324A /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358118E210A2E5400FE324A /* PlacesTableViewController.swift */; };
 		13581191210A2E7E00FE324A /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13581190210A2E7E00FE324A /* CreateNewPlaceViewController.swift */; };
 		13581193210A32B100FE324A /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13581192210A32B100FE324A /* PlacesTable.storyboard */; };
+		1365FCDA210A3AD4002CFE41 /* PlacesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365FCD9210A3AD4002CFE41 /* PlacesTabBarViewController.swift */; };
+		1365FCDC210A3BAA002CFE41 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365FCDB210A3BAA002CFE41 /* PlacesPresenter.swift */; };
 		13F80560210A2A49007507AD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8055F210A2A49007507AD /* Place.swift */; };
 		13F80565210A2B1C007507AD /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F80564210A2B1C007507AD /* PlaceController.swift */; };
 		9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 		1358118E210A2E5400FE324A /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		13581190210A2E7E00FE324A /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		13581192210A32B100FE324A /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		1365FCD9210A3AD4002CFE41 /* PlacesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarViewController.swift; sourceTree = "<group>"; };
+		1365FCDB210A3BAA002CFE41 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 		13F8055F210A2A49007507AD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		13F80564210A2B1C007507AD /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 		9DC8C288210A1DAE00A4B391 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1365FCDD210A3BB4002CFE41 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1365FCDB210A3BAA002CFE41 /* PlacesPresenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		13F80561210A2AE6007507AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +84,7 @@
 				1358118C210A2E3000FE324A /* VisitedPlacesViewController.swift */,
 				1358118E210A2E5400FE324A /* PlacesTableViewController.swift */,
 				13581190210A2E7E00FE324A /* CreateNewPlaceViewController.swift */,
+				1365FCD9210A3AD4002CFE41 /* PlacesTabBarViewController.swift */,
 			);
 			name = "View Controllers";
 			path = "New Group";
@@ -96,6 +109,7 @@
 		9DC8C28A210A1DAE00A4B391 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				1365FCDD210A3BB4002CFE41 /* Protocols */,
 				13F80563210A2B08007507AD /* View Controllers */,
 				13F80562210A2AFA007507AD /* Model Controllers */,
 				13F80561210A2AE6007507AD /* Models */,
@@ -200,9 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F80560210A2A49007507AD /* Place.swift in Sources */,
+				1365FCDC210A3BAA002CFE41 /* PlacesPresenter.swift in Sources */,
 				13F80565210A2B1C007507AD /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				1365FCDA210A3AD4002CFE41 /* PlacesTabBarViewController.swift in Sources */,
 				1358118D210A2E3100FE324A /* VisitedPlacesViewController.swift in Sources */,
 				13581191210A2E7E00FE324A /* CreateNewPlaceViewController.swift in Sources */,
 				1358118F210A2E5400FE324A /* PlacesTableViewController.swift in Sources */,
